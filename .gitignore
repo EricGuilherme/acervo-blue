@@ -1,0 +1,18 @@
+*.class
+*.iml
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+.idea/
+target/
+
+.metadata/
+*.classpath/
+.recommenders/
+*.recommenders/*
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/write.lock
