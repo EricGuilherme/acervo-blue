@@ -1,4 +1,4 @@
-package br.com.acervo.seguranca;
+package br.com.acervo.controller.seguranca;
 
 import br.com.acervo.model.Usuario;
 import br.com.acervo.to.UsuarioTO;

@@ -6,13 +6,21 @@ import javax.persistence.Id;
 @Entity
 public class TipoItem {
 
+    public static final int LIVRO = 1;
+    public static final int CD = 2;
+    public static final int DVD = 3;
+    public static final int APOSTILA = 4;
+    public static final int REVISTA = 5;
+
     @Id
     private Long tipoItemKey;
     private String descricao;
 
-    public TipoItem(Long tipoItemKey, String descricao) {
+    public TipoItem() {
+    }
+
+    public TipoItem(Long tipoItemKey) {
         this.tipoItemKey = tipoItemKey;
-        this.descricao = descricao;
     }
 
     public Long getTipoItemKey() {
@@ -21,5 +29,9 @@ public class TipoItem {
 
     public String getDescricao() {
         return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
