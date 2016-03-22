@@ -26,7 +26,7 @@ public class Item {
 
     @ManyToOne
     @JoinColumn(name = "USER_KEY")
-    private User user;
+    private Usuario usuario;
 
     @OneToOne
     @JoinColumn(name = "PROPRIETARIO_KEY")
@@ -88,12 +88,12 @@ public class Item {
         this.autor = autor;
     }
 
-    public User getUser() {
-        return user;
+    public Usuario getUsuario() {
+        return usuario;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     public Proprietario getProprietario() {
